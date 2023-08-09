@@ -1,7 +1,7 @@
-import  React  from "react";
+import React from "react";
 
-class Home extends React.Component { 
-    render() { 
+class Home extends React.Component {
+    render() {
         return (
             <div>
                 <h1>Hello World!</h1>
@@ -9,5 +9,23 @@ class Home extends React.Component {
             </div>
         );
     }
+
+    
 }
-export default Home;
+
+class Artist extends React.Component {
+    render() {
+        return (
+            <>    <h4> Non atis la : {this.props.name} </h4>
+                <p> Byografi : {this.props.bio} </p>
+                <div> Total fanatik: 0 </div>
+                <hr />
+            </>
+
+        );
+
+    }
+
+}
+
+export default(Home,Artist);
