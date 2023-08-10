@@ -1,13 +1,11 @@
 import React from 'react';
+import Paran from './component/paran.js'
 
-
-class App extends React.Component {
+export default class App extends React.Component {
   render() {
     return (
-      <>
-        <h1>hello tout moun</h1>
+      <>        <Paran />
       </>
     )
   }
 }
-export default App;
