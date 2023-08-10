@@ -1,41 +1,13 @@
-import Artist from './home.js'
-import PropType from 'prop-types';
+import React from 'react';
 
-Artist.defaultProps = {
-  name: "inconnu",
-  bio:"no bio"
-}
 
-Artist.propsType = {
-  name: PropType.string,
-  bio:PropType.string
-}
-
-export default class app extends React.Component {
-  render()
-  {
-    const atisYo = [
-      {
-        name: "Emeline Michel",
-        bio: "Yon atis fanm"
-      },
-      {
-        name: "Bélo",
-        bio: "Yon atis gason"
-      }
-    ] // sa se tablo atis yo
-
+class App extends React.Component {
+  render() {
     return (
-      <div>
-        <h1>Ayibobo tout moun</h1>
-        {/* <Artist/> */}
-        <hr /> 
-        <h1>Men atis yo</h1>
-        {atisYo.map((atis) => {
-          // nap presize transfòmasyon an, ansanm ak tout atribi ki lesansyèl yo
-          return <Artist name={atis.name} bio={atis.bio} />
-        })}
-      </div>
+      <>
+        <h1>hello tout moun</h1>
+      </>
     )
   }
 }
+export default App;

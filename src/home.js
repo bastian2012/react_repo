@@ -2,30 +2,10 @@ import React from "react";
 
 class Home extends React.Component {
     render() {
-        return (
-            <div>
-                <h1>Hello World!</h1>
-                <h2>welcome to home component !!</h2>
-            </div>
-        );
+        return <>
+            <h1>Bienvini sou sit web pesonel mw an !!!</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium autem consequatur corporis delectus doloribus eos, expedita facilis fuga harum impedit ipsam iusto laudantium maiores maxime minima molestiae nobis, nobis quaerat quasi quod repellendus repudiandae saepe sunt tempore tenetur unde voluptates voluptatum.</p>
+        </>
     }
-
-    
 }
-
-class Artist extends React.Component {
-    render() {
-        return (
-            <>    <h4> Non atis la : {this.props.name} </h4>
-                <p> Byografi : {this.props.bio} </p>
-                <div> Total fanatik: 0 </div>
-                <hr />
-            </>
-
-        );
-
-    }
-
-}
-
-export default(Home,Artist);
+export default Home;
